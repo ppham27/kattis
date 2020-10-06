@@ -10,7 +10,7 @@ let status class_year class_month class_day
   else "coach petitions"
 
 let () = scanf "%d\n" (fun n ->
-    for i = 1 to n do
+    for _ = 1 to n do
       let () = printf "%s " (scanf "%s " (fun x -> x)) in
       printf "%s\n"
         (scanf "%d/%d/%d %d/%d/%d %d\n" (status))
